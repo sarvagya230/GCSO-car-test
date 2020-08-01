@@ -2,7 +2,7 @@ var car,wall,speed,sizeH,sizeW,weight;
 weight=random(400,500);
 var Destruction ;
 function setup() {
-  speed=random(1,7);
+  speed=random(1,20);
   sizeH=random(20,50);
   sizeW=sizeH;
   car=createSprite(100,100,20,20);
@@ -49,5 +49,5 @@ function deformation(a,b)
 }
 function destruction()
 {
-  Destruction=0.5*weight*speed*speed;
+  Destruction=0.5*weight*speed*speed/2250;
 }
